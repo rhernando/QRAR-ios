@@ -7,7 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZXingWidgetController.h"
+#import "QRCodeReader.h"
+#import "AztecReader.h"
+#import "ELARScanController.h"
+#import "ELARScanView.h"
+#import "ELARConfiController.h"
 
-@interface ELARViewController : UIViewController
+
+@interface ELARViewController : UIViewController <ZXingDelegate>
+{
+    
+    
+}
+
+- (IBAction) configButtonTapped;
+- (IBAction) showButtonTapped;
 
 @end

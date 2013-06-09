@@ -11,9 +11,15 @@
 @class ELARViewController;
 
 @interface ELARAppDelegate : UIResponder <UIApplicationDelegate>
+{
+    NSMutableArray *appAsignaturas; //table view data
+
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) ELARViewController *viewController;
+
+@property (nonatomic, retain) NSArray *appAsignaturas;
 
 @end

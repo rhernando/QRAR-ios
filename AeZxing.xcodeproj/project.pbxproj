@@ -7,21 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B43072A1750DA0800B92229 /* ELARConfiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4307291750DA0800B92229 /* ELARConfiController.m */; };
+		4B43072C17510F2100B92229 /* config_list.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B43072B17510F2100B92229 /* config_list.xib */; };
+		4B43072E17592E2100B92229 /* new_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B43072D17592E2100B92229 /* new_logo.png */; };
+		4B4307321759304600B92229 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B43072F1759304600B92229 /* Icon-72.png */; };
+		4B4307331759304600B92229 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4307301759304600B92229 /* Icon-Small-50.png */; };
+		4B4307341759304600B92229 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4307311759304600B92229 /* Icon.png */; };
+		4B4307361759305F00B92229 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4307351759305F00B92229 /* Icon.png */; };
+		4B4307381759307A00B92229 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4307371759307A00B92229 /* Default.png */; };
 		4BB8A1AD16D43C240046D9B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB8A1AC16D43C240046D9B7 /* UIKit.framework */; };
 		4BB8A1AF16D43C240046D9B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB8A1AE16D43C240046D9B7 /* Foundation.framework */; };
 		4BB8A1B116D43C240046D9B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB8A1B016D43C240046D9B7 /* CoreGraphics.framework */; };
 		4BB8A1B716D43C240046D9B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8A1B516D43C240046D9B7 /* InfoPlist.strings */; };
 		4BB8A1B916D43C240046D9B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB8A1B816D43C240046D9B7 /* main.m */; };
-		4BB8A1BD16D43C240046D9B7 /* ELARAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB8A1BC16D43C240046D9B7 /* ELARAppDelegate.m */; };
-		4BB8A1BF16D43C240046D9B7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8A1BE16D43C240046D9B7 /* Default.png */; };
-		4BB8A1C116D43C240046D9B7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8A1C016D43C240046D9B7 /* Default@2x.png */; };
-		4BB8A1C316D43C240046D9B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8A1C216D43C240046D9B7 /* Default-568h@2x.png */; };
-		4BB8A1C616D43C240046D9B7 /* ELARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB8A1C516D43C240046D9B7 /* ELARViewController.m */; };
+		4BB8A1BD16D43C240046D9B7 /* ELARAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4BB8A1BC16D43C240046D9B7 /* ELARAppDelegate.mm */; };
+		4BB8A1C616D43C240046D9B7 /* ELARViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4BB8A1C516D43C240046D9B7 /* ELARViewController.mm */; };
 		4BB8A1C916D43C240046D9B7 /* ELARViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8A1C716D43C240046D9B7 /* ELARViewController_iPhone.xib */; };
 		4BB8A1CC16D43C250046D9B7 /* ELARViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8A1CA16D43C250046D9B7 /* ELARViewController_iPad.xib */; };
+		4BB8A1D316D447000046D9B7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB8A1D216D447000046D9B7 /* AudioToolbox.framework */; };
+		4BB8A1D516D447060046D9B7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB8A1D416D447060046D9B7 /* AVFoundation.framework */; };
+		4BB8A1D716D447100046D9B7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB8A1D616D447100046D9B7 /* CoreMedia.framework */; };
+		4BB8A1D916D447170046D9B7 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB8A1D816D447170046D9B7 /* CoreVideo.framework */; };
+		4BB8A1DB16D447230046D9B7 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB8A1DA16D447230046D9B7 /* libiconv.dylib */; };
+		4BB8A1E016D6B1FD0046D9B7 /* qrcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8A1DF16D6B1FD0046D9B7 /* qrcode.png */; };
+		4BB8A1EB16D827740046D9B7 /* ELARScanController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB8A1EA16D827740046D9B7 /* ELARScanController.m */; };
+		4BB8A1EE16DAD4A90046D9B7 /* ELARScanView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4BB8A1ED16DAD4A90046D9B7 /* ELARScanView.mm */; };
+		4D4AE0CE87A041BD8C5A6675 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACBA07DB0A746B0B80BA37F /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B4307281750DA0800B92229 /* ELARConfiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELARConfiController.h; sourceTree = "<group>"; };
+		4B4307291750DA0800B92229 /* ELARConfiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELARConfiController.m; sourceTree = "<group>"; };
+		4B43072B17510F2100B92229 /* config_list.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = config_list.xib; sourceTree = "<group>"; };
+		4B43072D17592E2100B92229 /* new_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new_logo.png; sourceTree = "<group>"; };
+		4B43072F1759304600B92229 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		4B4307301759304600B92229 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		4B4307311759304600B92229 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		4B4307351759305F00B92229 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		4B4307371759307A00B92229 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4BB8A1A916D43C240046D9B7 /* AeZxing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeZxing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB8A1AC16D43C240046D9B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4BB8A1AE16D43C240046D9B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -30,15 +53,27 @@
 		4BB8A1B616D43C240046D9B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4BB8A1B816D43C240046D9B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4BB8A1BA16D43C240046D9B7 /* AeZxing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AeZxing-Prefix.pch"; sourceTree = "<group>"; };
-		4BB8A1BB16D43C240046D9B7 /* ELARAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELARAppDelegate.h; sourceTree = "<group>"; };
-		4BB8A1BC16D43C240046D9B7 /* ELARAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELARAppDelegate.m; sourceTree = "<group>"; };
+		4BB8A1BB16D43C240046D9B7 /* ELARAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELARAppDelegate.h; sourceTree = "<group>"; };
+		4BB8A1BC16D43C240046D9B7 /* ELARAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ELARAppDelegate.mm; sourceTree = "<group>"; };
 		4BB8A1BE16D43C240046D9B7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4BB8A1C016D43C240046D9B7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4BB8A1C216D43C240046D9B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4BB8A1C416D43C240046D9B7 /* ELARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELARViewController.h; sourceTree = "<group>"; };
-		4BB8A1C516D43C240046D9B7 /* ELARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELARViewController.m; sourceTree = "<group>"; };
+		4BB8A1C516D43C240046D9B7 /* ELARViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ELARViewController.mm; sourceTree = "<group>"; };
 		4BB8A1C816D43C240046D9B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ELARViewController_iPhone.xib; sourceTree = "<group>"; };
 		4BB8A1CB16D43C250046D9B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ELARViewController_iPad.xib; sourceTree = "<group>"; };
+		4BB8A1D216D447000046D9B7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4BB8A1D416D447060046D9B7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4BB8A1D616D447100046D9B7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4BB8A1D816D447170046D9B7 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		4BB8A1DA16D447230046D9B7 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		4BB8A1DF16D6B1FD0046D9B7 /* qrcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = qrcode.png; path = ../../Zbarcocoapod/Zbarcocoapod/qrcode.png; sourceTree = "<group>"; };
+		4BB8A1E916D827730046D9B7 /* ELARScanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELARScanController.h; sourceTree = "<group>"; };
+		4BB8A1EA16D827740046D9B7 /* ELARScanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELARScanController.m; sourceTree = "<group>"; };
+		4BB8A1EC16DAD4A80046D9B7 /* ELARScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELARScanView.h; sourceTree = "<group>"; };
+		4BB8A1ED16DAD4A90046D9B7 /* ELARScanView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ELARScanView.mm; sourceTree = "<group>"; };
+		94D49EE0AC644EBF8AD1C07C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		9ACBA07DB0A746B0B80BA37F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,9 +81,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BB8A1DB16D447230046D9B7 /* libiconv.dylib in Frameworks */,
+				4BB8A1D916D447170046D9B7 /* CoreVideo.framework in Frameworks */,
+				4BB8A1D716D447100046D9B7 /* CoreMedia.framework in Frameworks */,
+				4BB8A1D516D447060046D9B7 /* AVFoundation.framework in Frameworks */,
+				4BB8A1D316D447000046D9B7 /* AudioToolbox.framework in Frameworks */,
 				4BB8A1AD16D43C240046D9B7 /* UIKit.framework in Frameworks */,
 				4BB8A1AF16D43C240046D9B7 /* Foundation.framework in Frameworks */,
 				4BB8A1B116D43C240046D9B7 /* CoreGraphics.framework in Frameworks */,
+				4D4AE0CE87A041BD8C5A6675 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +99,12 @@
 		4BB8A1A016D43C240046D9B7 = {
 			isa = PBXGroup;
 			children = (
+				4B4307371759307A00B92229 /* Default.png */,
+				4B4307351759305F00B92229 /* Icon.png */,
 				4BB8A1B216D43C240046D9B7 /* AeZxing */,
 				4BB8A1AB16D43C240046D9B7 /* Frameworks */,
 				4BB8A1AA16D43C240046D9B7 /* Products */,
+				94D49EE0AC644EBF8AD1C07C /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,9 +119,15 @@
 		4BB8A1AB16D43C240046D9B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4BB8A1DA16D447230046D9B7 /* libiconv.dylib */,
+				4BB8A1D816D447170046D9B7 /* CoreVideo.framework */,
+				4BB8A1D616D447100046D9B7 /* CoreMedia.framework */,
+				4BB8A1D416D447060046D9B7 /* AVFoundation.framework */,
+				4BB8A1D216D447000046D9B7 /* AudioToolbox.framework */,
 				4BB8A1AC16D43C240046D9B7 /* UIKit.framework */,
 				4BB8A1AE16D43C240046D9B7 /* Foundation.framework */,
 				4BB8A1B016D43C240046D9B7 /* CoreGraphics.framework */,
+				9ACBA07DB0A746B0B80BA37F /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -86,12 +136,19 @@
 			isa = PBXGroup;
 			children = (
 				4BB8A1BB16D43C240046D9B7 /* ELARAppDelegate.h */,
-				4BB8A1BC16D43C240046D9B7 /* ELARAppDelegate.m */,
+				4BB8A1BC16D43C240046D9B7 /* ELARAppDelegate.mm */,
 				4BB8A1C416D43C240046D9B7 /* ELARViewController.h */,
-				4BB8A1C516D43C240046D9B7 /* ELARViewController.m */,
+				4BB8A1C516D43C240046D9B7 /* ELARViewController.mm */,
 				4BB8A1C716D43C240046D9B7 /* ELARViewController_iPhone.xib */,
 				4BB8A1CA16D43C250046D9B7 /* ELARViewController_iPad.xib */,
+				4BB8A1E916D827730046D9B7 /* ELARScanController.h */,
+				4BB8A1EA16D827740046D9B7 /* ELARScanController.m */,
+				4BB8A1EC16DAD4A80046D9B7 /* ELARScanView.h */,
+				4BB8A1ED16DAD4A90046D9B7 /* ELARScanView.mm */,
 				4BB8A1B316D43C240046D9B7 /* Supporting Files */,
+				4B4307281750DA0800B92229 /* ELARConfiController.h */,
+				4B4307291750DA0800B92229 /* ELARConfiController.m */,
+				4B43072B17510F2100B92229 /* config_list.xib */,
 			);
 			path = AeZxing;
 			sourceTree = "<group>";
@@ -99,6 +156,11 @@
 		4BB8A1B316D43C240046D9B7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4B43072F1759304600B92229 /* Icon-72.png */,
+				4B4307301759304600B92229 /* Icon-Small-50.png */,
+				4B4307311759304600B92229 /* Icon.png */,
+				4B43072D17592E2100B92229 /* new_logo.png */,
+				4BB8A1DF16D6B1FD0046D9B7 /* qrcode.png */,
 				4BB8A1B416D43C240046D9B7 /* AeZxing-Info.plist */,
 				4BB8A1B516D43C240046D9B7 /* InfoPlist.strings */,
 				4BB8A1B816D43C240046D9B7 /* main.m */,
@@ -120,6 +182,7 @@
 				4BB8A1A516D43C240046D9B7 /* Sources */,
 				4BB8A1A616D43C240046D9B7 /* Frameworks */,
 				4BB8A1A716D43C240046D9B7 /* Resources */,
+				F6E0CD04F140469F86FD8CC8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,7 +201,7 @@
 			attributes = {
 				CLASSPREFIX = ELAR;
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "Rubén Hernando Martín";
+				ORGANIZATIONNAME = "Rub√©n Hernando Mart√≠n";
 			};
 			buildConfigurationList = 4BB8A1A416D43C240046D9B7 /* Build configuration list for PBXProject "AeZxing" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -163,15 +226,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BB8A1B716D43C240046D9B7 /* InfoPlist.strings in Resources */,
-				4BB8A1BF16D43C240046D9B7 /* Default.png in Resources */,
-				4BB8A1C116D43C240046D9B7 /* Default@2x.png in Resources */,
-				4BB8A1C316D43C240046D9B7 /* Default-568h@2x.png in Resources */,
 				4BB8A1C916D43C240046D9B7 /* ELARViewController_iPhone.xib in Resources */,
 				4BB8A1CC16D43C250046D9B7 /* ELARViewController_iPad.xib in Resources */,
+				4BB8A1E016D6B1FD0046D9B7 /* qrcode.png in Resources */,
+				4B43072C17510F2100B92229 /* config_list.xib in Resources */,
+				4B43072E17592E2100B92229 /* new_logo.png in Resources */,
+				4B4307321759304600B92229 /* Icon-72.png in Resources */,
+				4B4307331759304600B92229 /* Icon-Small-50.png in Resources */,
+				4B4307341759304600B92229 /* Icon.png in Resources */,
+				4B4307361759305F00B92229 /* Icon.png in Resources */,
+				4B4307381759307A00B92229 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F6E0CD04F140469F86FD8CC8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4BB8A1A516D43C240046D9B7 /* Sources */ = {
@@ -179,8 +264,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BB8A1B916D43C240046D9B7 /* main.m in Sources */,
-				4BB8A1BD16D43C240046D9B7 /* ELARAppDelegate.m in Sources */,
-				4BB8A1C616D43C240046D9B7 /* ELARViewController.m in Sources */,
+				4BB8A1BD16D43C240046D9B7 /* ELARAppDelegate.mm in Sources */,
+				4BB8A1C616D43C240046D9B7 /* ELARViewController.mm in Sources */,
+				4BB8A1EB16D827740046D9B7 /* ELARScanController.m in Sources */,
+				4BB8A1EE16DAD4A90046D9B7 /* ELARScanView.mm in Sources */,
+				4B43072A1750DA0800B92229 /* ELARConfiController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +320,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+					"DEBUG=0",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
@@ -274,7 +362,10 @@
 		};
 		4BB8A1D016D43C250046D9B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94D49EE0AC644EBF8AD1C07C /* Pods.xcconfig */;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeZxing/AeZxing-Prefix.pch";
 				INFOPLIST_FILE = "AeZxing/AeZxing-Info.plist";
@@ -285,7 +376,10 @@
 		};
 		4BB8A1D116D43C250046D9B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94D49EE0AC644EBF8AD1C07C /* Pods.xcconfig */;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeZxing/AeZxing-Prefix.pch";
 				INFOPLIST_FILE = "AeZxing/AeZxing-Info.plist";
@@ -313,6 +407,7 @@
 				4BB8A1D116D43C250046D9B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
