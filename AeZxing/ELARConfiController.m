@@ -15,7 +15,10 @@
 @implementation ELARConfiController
 
 @synthesize asignaturas;
+@synthesize cursos;
+@synthesize idsAsignaturas;
 @synthesize finalConfig;
+@synthesize idsConfig;
 @synthesize myTableView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -26,6 +29,9 @@
         
         ELARAppDelegate *appDelegate = (ELARAppDelegate *)[[UIApplication sharedApplication] delegate];
         asignaturas = appDelegate.appAsignaturas;
+        cursos = appDelegate.appTitulos;
+        idsAsignaturas = appDelegate.codesAsignaturas;
+        
     }
     [self.myTableView reloadData];
     return self;
@@ -47,7 +53,10 @@
 
         }
     }
-
+    idsConfig = [prefs objectForKey:@"idsconfig"];
+    if (idsConfig == nil){
+        idsConfig = [[NSMutableArray alloc] init];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -93,6 +102,7 @@
 
 //RootViewController.m
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return [cursos objectAtIndex:section];
     switch (section) {
         case 0:
             return @"Primero Ing. Informática";
@@ -121,10 +131,13 @@
 {
     
     [finalConfig removeAllObjects];
+    [idsConfig removeAllObjects];
     NSArray *indexes = [tableView indexPathsForSelectedRows];
     for (NSIndexPath *path in indexes) {
         NSLog(@"TOTAL sect %d, ind %d", path.section, path.row);
         [finalConfig addObject:[NSString stringWithFormat:@"%d-%d", path.section, path.row]];
+        [idsConfig addObject:[idsAsignaturas objectForKey: [NSString stringWithFormat:@"%d-%d", path.section, path.row]]];
+        
     }
     NSLog(@"The content of arry is%@",finalConfig);
 
@@ -136,17 +149,41 @@
     [finalConfig removeAllObjects];
     NSArray *indexes = [tableView indexPathsForSelectedRows];
     for (NSIndexPath *path in indexes) {
-        NSLog(@"TOTAL sect %d, ind %d", path.section, path.row);
+        NSLog(@"%d-%d", path.section, path.row);
+        NSLog(@"kv %@", [idsAsignaturas objectForKey: [NSString stringWithFormat:@"%d-%d", path.section, path.row]]);
         [finalConfig addObject:[NSString stringWithFormat:@"%d-%d", path.section, path.row]];
+        [idsConfig addObject:[idsAsignaturas objectForKey: [NSString stringWithFormat:@"%d-%d", path.section, path.row]]];
+
     }
     NSLog(@"The content of arry is%@",finalConfig);
 
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0,0,tableView.frame.size.width,30)];
+    headerView.backgroundColor = [UIColor redColor ];
+    UILabel *headerLabel = [[UILabel alloc] initWithFrame:headerView.frame];
+    
+    headerLabel.font = [UIFont boldSystemFontOfSize:10];
+    headerLabel.lineBreakMode = NSLineBreakByCharWrapping;
+    headerLabel.text = [self tableView:tableView titleForHeaderInSection:section];
+    
+
+   // headerLabel.backgroundColor = [UIColor clearColor];
+    
+    [headerView addSubview:headerLabel];
+    
+    return headerView;
+    
 }
 
 - (IBAction)acceptButtonTapped  {
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     
     [prefs setObject:finalConfig forKey:@"asignaturasconfig"];
+    [prefs setObject:idsConfig forKey:@"idsconfig"];
     [self dismissViewControllerAnimated:YES completion:nil];
     
     NSLog(@"Save config");

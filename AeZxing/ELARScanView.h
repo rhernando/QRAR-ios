@@ -8,11 +8,22 @@
 
 #import <UIKit/UIKit.h>
 #import "OverlayView.h"
+#import <MediaPlayer/MediaPlayer.h>
 
-@interface ELARScanView : OverlayView
+@interface ELARScanView : OverlayView{
+    NSMutableData *fileData;
+    NSNumber *totalFileSize;
+    NSString *filename;
+    
+    MPMoviePlayerController *player;
+    UIActivityIndicatorView *activityView;
 
+}
 
-- (void)colocarImagen:(CGPoint)point1 pont2:(CGPoint)point2 url:(NSString*)url;
-- (void)popupAlert:(NSString*)titulo texto:(NSString*)texto;
+@property (nonatomic, retain) MPMoviePlayerController *player;
+
+- (void)colocarImagen:(CGPoint)point1 pont2:(CGPoint)point2 pont3:(CGPoint)point3 url:(NSString*)url;
+- (void)colocarVideo:(CGPoint)point1 pont2:(CGPoint)point2 pont3:(CGPoint)point3 url:(NSString*)url filename:(NSString*)name;
+- (void)popupAlert:(NSString*)titulo texto:(NSString*)texto delegate: (id) delegating;
 
 @end

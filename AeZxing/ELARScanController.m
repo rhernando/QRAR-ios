@@ -14,6 +14,7 @@
 
 @implementation ELARScanController
 
+
 - (id)initWithDelegate:(id<ZXingDelegate>)scanDelegate showCancel:(BOOL)shouldShowCancel OneDMode:(BOOL)shouldUseoOneDMode {
     NSLog(@"init");
     return [self initWithDelegate:scanDelegate showCancel:shouldShowCancel OneDMode:shouldUseoOneDMode showLicense:NO];
@@ -43,7 +44,7 @@
 
 
 - (void)decoder:(Decoder *)decoder didDecodeImage:(UIImage *)image usingSubset:(UIImage *)subset withResult:(TwoDDecoderResult *)twoDResult {
-    NSString *ipAddress = @"192.168.0.196";
+    NSString *ipAddress = @"192.168.0.193";
     
     NSLog(@"decode image!!!! %@", twoDResult.text);
     NSLog(@"The content of arry is%@",[twoDResult points]);
@@ -57,11 +58,17 @@
     
     overlay =  (ELARScanView*)self.overlayView;
 
+    for (UIView *subview in [overlay subviews]) {
+        if (subview.tag == 77) {
+            [subview removeFromSuperview];
+        }
+    }
+    
     NSLog(@"Decoding type %@", qrtype);
     if ([qrtype isEqualToString: @"informacion"]){
         // retrieve array to send to server
         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-        NSMutableArray *finalConfig = [prefs objectForKey:@"asignaturasconfig"];
+        NSMutableArray *finalConfig = [prefs objectForKey:@"idsconfig"];
         if (finalConfig == nil){
             finalConfig = [[NSMutableArray alloc] init];
         }
@@ -77,6 +84,16 @@
             NSLog(@"connection failed");
         }
         
+    }else if ([qrtype isEqualToString: @"video"]){
+        NSString *url = [NSString stringWithFormat:@"http://%@:3000/imageuploaded/%@", ipAddress, qrid];
+
+        CGPoint p1 = [[[twoDResult points] objectAtIndex:0] CGPointValue];
+        CGPoint p2 = [[[twoDResult points] objectAtIndex:1] CGPointValue];
+        CGPoint p3 = [[[twoDResult points] objectAtIndex:2] CGPointValue];
+
+        [overlay colocarVideo:p1 pont2:p3 pont3:p2 url:url filename:[params objectAtIndex:4]];
+
+        
     }else{
         
         NSString *url = [NSString stringWithFormat:@"http://%@:3000/imageuploaded/%@", ipAddress, qrid];
@@ -85,7 +102,8 @@
         CGPoint p2 = [[[twoDResult points] objectAtIndex:1] CGPointValue];
         CGPoint p3 = [[[twoDResult points] objectAtIndex:2] CGPointValue];
         
-        [overlay colocarImagen: p1 pont2:p3 url:url];
+        
+        [overlay colocarImagen: p1 pont2:p3 pont3:p2 url:url];
     
         //  NSLog(@"decode image!!!! %@", NSStringFromCGPoint(p1));
         decoding = YES;
@@ -94,6 +112,14 @@
     decoder.delegate = nil;
 
 
+}
+
+
+- (void) moviePlayBackDidFinish:(NSNotification*)notification {
+    NSError *error = [[notification userInfo] objectForKey:@"error"];
+    if (error) {
+        NSLog(@"Did finish with error: %@", error);
+    }
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
@@ -111,11 +137,17 @@
     {
         for(NSDictionary *item in jsonArray) {
             NSLog(@"Item: %@", [item objectForKey:@"asignatura"]);
-            [overlay popupAlert:[item objectForKey:@"asignatura"] texto:[item objectForKey:@"texto"]];
+            [overlay popupAlert:[item objectForKey:@"asignatura"] texto:[item objectForKey:@"texto"] delegate:self];
         }
     }else{
         NSLog(@"Error parsing JSON: %@", error);
     }
+
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"ACCEPTED");
     decoding = YES;
 
 }

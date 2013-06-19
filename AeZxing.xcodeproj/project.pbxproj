@@ -15,6 +15,8 @@
 		4B4307341759304600B92229 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4307311759304600B92229 /* Icon.png */; };
 		4B4307361759305F00B92229 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4307351759305F00B92229 /* Icon.png */; };
 		4B4307381759307A00B92229 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4307371759307A00B92229 /* Default.png */; };
+		4B60DE4A176E79180004CC5D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B60DE48176DDB710004CC5D /* MediaPlayer.framework */; };
+		4B60DE4E176E7AE80004CC5D /* 2012-04-14 16.40.34.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4B60DE4D176E7AE80004CC5D /* 2012-04-14 16.40.34.mp4 */; };
 		4BB8A1AD16D43C240046D9B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB8A1AC16D43C240046D9B7 /* UIKit.framework */; };
 		4BB8A1AF16D43C240046D9B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB8A1AE16D43C240046D9B7 /* Foundation.framework */; };
 		4BB8A1B116D43C240046D9B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB8A1B016D43C240046D9B7 /* CoreGraphics.framework */; };
@@ -45,6 +47,8 @@
 		4B4307311759304600B92229 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		4B4307351759305F00B92229 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		4B4307371759307A00B92229 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4B60DE48176DDB710004CC5D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		4B60DE4D176E7AE80004CC5D /* 2012-04-14 16.40.34.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "2012-04-14 16.40.34.mp4"; path = "../../../../Dropbox/Camera Uploads/2012-04-14 16.40.34.mp4"; sourceTree = "<group>"; };
 		4BB8A1A916D43C240046D9B7 /* AeZxing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeZxing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB8A1AC16D43C240046D9B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4BB8A1AE16D43C240046D9B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -81,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B60DE4A176E79180004CC5D /* MediaPlayer.framework in Frameworks */,
 				4BB8A1DB16D447230046D9B7 /* libiconv.dylib in Frameworks */,
 				4BB8A1D916D447170046D9B7 /* CoreVideo.framework in Frameworks */,
 				4BB8A1D716D447100046D9B7 /* CoreMedia.framework in Frameworks */,
@@ -99,6 +104,7 @@
 		4BB8A1A016D43C240046D9B7 = {
 			isa = PBXGroup;
 			children = (
+				4B60DE48176DDB710004CC5D /* MediaPlayer.framework */,
 				4B4307371759307A00B92229 /* Default.png */,
 				4B4307351759305F00B92229 /* Icon.png */,
 				4BB8A1B216D43C240046D9B7 /* AeZxing */,
@@ -156,6 +162,7 @@
 		4BB8A1B316D43C240046D9B7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4B60DE4D176E7AE80004CC5D /* 2012-04-14 16.40.34.mp4 */,
 				4B43072F1759304600B92229 /* Icon-72.png */,
 				4B4307301759304600B92229 /* Icon-Small-50.png */,
 				4B4307311759304600B92229 /* Icon.png */,
@@ -236,6 +243,7 @@
 				4B4307341759304600B92229 /* Icon.png in Resources */,
 				4B4307361759305F00B92229 /* Icon.png in Resources */,
 				4B4307381759307A00B92229 /* Default.png in Resources */,
+				4B60DE4E176E7AE80004CC5D /* 2012-04-14 16.40.34.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
