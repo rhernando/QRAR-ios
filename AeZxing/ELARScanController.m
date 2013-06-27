@@ -44,7 +44,7 @@
 
 
 - (void)decoder:(Decoder *)decoder didDecodeImage:(UIImage *)image usingSubset:(UIImage *)subset withResult:(TwoDDecoderResult *)twoDResult {
-    NSString *ipAddress = @"192.168.0.193";
+    NSString *ipAddress = @"150.244.58.243";
     
     NSLog(@"decode image!!!! %@", twoDResult.text);
     NSLog(@"The content of arry is%@",[twoDResult points]);
