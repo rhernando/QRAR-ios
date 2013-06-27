@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B101EFC1774BBEF001F9DB0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B101EFB1774BBEF001F9DB0 /* Default@2x.png */; };
+		4B101EFD17752897001F9DB0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8A1BE16D43C240046D9B7 /* Default.png */; };
+		4B101EFF177528B7001F9DB0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B101EFE177528B7001F9DB0 /* Default-568h@2x.png */; };
+		4B101F00177528D2001F9DB0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8A1C216D43C240046D9B7 /* Default-568h@2x.png */; };
 		4B43072A1750DA0800B92229 /* ELARConfiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4307291750DA0800B92229 /* ELARConfiController.m */; };
 		4B43072C17510F2100B92229 /* config_list.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B43072B17510F2100B92229 /* config_list.xib */; };
 		4B43072E17592E2100B92229 /* new_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B43072D17592E2100B92229 /* new_logo.png */; };
@@ -25,7 +29,6 @@
 		4BB8A1BD16D43C240046D9B7 /* ELARAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4BB8A1BC16D43C240046D9B7 /* ELARAppDelegate.mm */; };
 		4BB8A1C616D43C240046D9B7 /* ELARViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4BB8A1C516D43C240046D9B7 /* ELARViewController.mm */; };
 		4BB8A1C916D43C240046D9B7 /* ELARViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8A1C716D43C240046D9B7 /* ELARViewController_iPhone.xib */; };
-		4BB8A1CC16D43C250046D9B7 /* ELARViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BB8A1CA16D43C250046D9B7 /* ELARViewController_iPad.xib */; };
 		4BB8A1D316D447000046D9B7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB8A1D216D447000046D9B7 /* AudioToolbox.framework */; };
 		4BB8A1D516D447060046D9B7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB8A1D416D447060046D9B7 /* AVFoundation.framework */; };
 		4BB8A1D716D447100046D9B7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB8A1D616D447100046D9B7 /* CoreMedia.framework */; };
@@ -38,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B101EFB1774BBEF001F9DB0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4B101EFE177528B7001F9DB0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4B4307281750DA0800B92229 /* ELARConfiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELARConfiController.h; sourceTree = "<group>"; };
 		4B4307291750DA0800B92229 /* ELARConfiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELARConfiController.m; sourceTree = "<group>"; };
 		4B43072B17510F2100B92229 /* config_list.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = config_list.xib; sourceTree = "<group>"; };
@@ -65,7 +70,6 @@
 		4BB8A1C416D43C240046D9B7 /* ELARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELARViewController.h; sourceTree = "<group>"; };
 		4BB8A1C516D43C240046D9B7 /* ELARViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ELARViewController.mm; sourceTree = "<group>"; };
 		4BB8A1C816D43C240046D9B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ELARViewController_iPhone.xib; sourceTree = "<group>"; };
-		4BB8A1CB16D43C250046D9B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ELARViewController_iPad.xib; sourceTree = "<group>"; };
 		4BB8A1D216D447000046D9B7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4BB8A1D416D447060046D9B7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4BB8A1D616D447100046D9B7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -104,6 +108,8 @@
 		4BB8A1A016D43C240046D9B7 = {
 			isa = PBXGroup;
 			children = (
+				4B101EFE177528B7001F9DB0 /* Default-568h@2x.png */,
+				4B101EFB1774BBEF001F9DB0 /* Default@2x.png */,
 				4B60DE48176DDB710004CC5D /* MediaPlayer.framework */,
 				4B4307371759307A00B92229 /* Default.png */,
 				4B4307351759305F00B92229 /* Icon.png */,
@@ -146,7 +152,6 @@
 				4BB8A1C416D43C240046D9B7 /* ELARViewController.h */,
 				4BB8A1C516D43C240046D9B7 /* ELARViewController.mm */,
 				4BB8A1C716D43C240046D9B7 /* ELARViewController_iPhone.xib */,
-				4BB8A1CA16D43C250046D9B7 /* ELARViewController_iPad.xib */,
 				4BB8A1E916D827730046D9B7 /* ELARScanController.h */,
 				4BB8A1EA16D827740046D9B7 /* ELARScanController.m */,
 				4BB8A1EC16DAD4A80046D9B7 /* ELARScanView.h */,
@@ -234,7 +239,6 @@
 			files = (
 				4BB8A1B716D43C240046D9B7 /* InfoPlist.strings in Resources */,
 				4BB8A1C916D43C240046D9B7 /* ELARViewController_iPhone.xib in Resources */,
-				4BB8A1CC16D43C250046D9B7 /* ELARViewController_iPad.xib in Resources */,
 				4BB8A1E016D6B1FD0046D9B7 /* qrcode.png in Resources */,
 				4B43072C17510F2100B92229 /* config_list.xib in Resources */,
 				4B43072E17592E2100B92229 /* new_logo.png in Resources */,
@@ -244,6 +248,10 @@
 				4B4307361759305F00B92229 /* Icon.png in Resources */,
 				4B4307381759307A00B92229 /* Default.png in Resources */,
 				4B60DE4E176E7AE80004CC5D /* 2012-04-14 16.40.34.mp4 in Resources */,
+				4B101EFC1774BBEF001F9DB0 /* Default@2x.png in Resources */,
+				4B101EFD17752897001F9DB0 /* Default.png in Resources */,
+				4B101EFF177528B7001F9DB0 /* Default-568h@2x.png in Resources */,
+				4B101F00177528D2001F9DB0 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +305,6 @@
 				4BB8A1C816D43C240046D9B7 /* en */,
 			);
 			name = ELARViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		4BB8A1CA16D43C250046D9B7 /* ELARViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4BB8A1CB16D43C250046D9B7 /* en */,
-			);
-			name = ELARViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
